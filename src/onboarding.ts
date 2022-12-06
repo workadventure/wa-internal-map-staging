@@ -18,11 +18,11 @@ WA.onInit().then(() => {
         console.info('Open the funnel');
         openFunnel(0);
     }
-    WA.player.state.onVariableChange('tutorialDone').subscribe(() => {
+    /*WA.player.state.onVariableChange('tutorialDone').subscribe(() => {
         console.info('Tutorial is done, open the funnel');
         if(!canRegister()) return;
         openFunnel(0);
-    });
+    });*/
 
     WA.player.state.onVariableChange('isRegistered').subscribe(() => {
         WA.ui.actionBar.removeButton('register-btn');
@@ -68,7 +68,7 @@ export const openFunnel = (TIME_TO_OPEN_FUNNEL = 20000) => {
 const addRegisterButton = () => {
     WA.ui.actionBar.addButton('register-btn', 'Register', (event) => {
         console.log('Button registered triggered', event);
-        openTutorial();
+        openFunnel();
     });
 }
 
