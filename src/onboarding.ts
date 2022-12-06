@@ -66,9 +66,13 @@ export const openFunnel = (TIME_TO_OPEN_FUNNEL = 20000) => {
 }
 
 const addRegisterButton = () => {
-    WA.ui.actionBar.addButton('register-btn', 'Register', (event) => {
-        console.log('Button registered triggered', event);
-        openFunnel();
+    WA.ui.actionBar.addButton({
+        id: 'register-btn',
+        label: 'Register',
+        callback: (event) => {
+            console.log('Button registered triggered', event);
+            openFunnel();
+        }
     });
 }
 
