@@ -23,6 +23,10 @@ WA.onInit().then(() => {
         if(!canRegister()) return;
         openFunnel(0);
     });
+
+    WA.player.state.onVariableChange('isRegistered').subscribe(() => {
+        WA.ui.actionBar.removeButton('register-btn');
+    });
 }).catch((err) => {
     console.error('Onboarding Script initialisation error => ', err);
 })
@@ -57,10 +61,6 @@ export const openFunnel = (TIME_TO_OPEN_FUNNEL = 20000) => {
             title: "Subscription",
             allowApi: true,
             position: "center",
-        }, () => {
-            if(canRegister()){
-                addRegisterButton();
-            }
         });
     }, TIME_TO_OPEN_FUNNEL);
 }
@@ -69,7 +69,6 @@ const addRegisterButton = () => {
     WA.ui.actionBar.addButton('register-btn', 'Register', (event) => {
         console.log('Button registered triggered', event);
         openTutorial();
-        WA.ui.actionBar.removeButton('register-btn');
     });
 }
 
