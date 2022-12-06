@@ -1,9 +1,16 @@
 /// <reference types="@workadventure/iframe-api-typings/iframe_api" />
 
-console.log('Onboarding Script started successfully');
+console.info('Onboarding Script started successfully');
 
 WA.onInit().then(() => {
-    console.log('canRegister', canRegister());
+    setTimeout(() => {
+        WA.chat.sendChatMessage('Hello', 'Me');
+    }, 2000);
+
+    if(canRegister()){
+        addRegisterButton();
+    }
+
     if(!WA.player.state.tutorialDone){
         openTutorial();
     }
@@ -14,7 +21,7 @@ WA.onInit().then(() => {
     WA.player.state.onVariableChange('tutorialDone').subscribe(() => {
         console.info('Tutorial is done, open the funnel');
         if(!canRegister()) return;
-        openFunnel();
+        openFunnel(0);
     });
 }).catch((err) => {
     console.error('Onboarding Script initialisation error => ', err);
@@ -39,14 +46,31 @@ export const openFunnel = (TIME_TO_OPEN_FUNNEL = 20000) => {
     setTimeout(() => {
         console.info("Funnel script initialized!");
         WA.ui.modal.closeModal();
+
+        let src = `https://staging.workadventu.re/funnel/connection?roomUrl=${encodeURI(WA.room.id)}`;
+        if(WA.room.id.indexOf('workadventure.localhost') !== -1){
+            src = src.replace('https://staging.workadventu.re', 'http://workadventure.localhost');
+        }
         WA.ui.modal.openModal({
-            src: `https://staging.workadventu.re/funnel/connection?roomUrl=${encodeURI(WA.room.id)}`,
+            src,
             allow: "fullscreen",
-            tiltle: "Subscription",
+            title: "Subscription",
             allowApi: true,
-            position: "center"
+            position: "center",
+        }, () => {
+            if(canRegister()){
+                addRegisterButton();
+            }
         });
     }, TIME_TO_OPEN_FUNNEL);
+}
+
+const addRegisterButton = () => {
+    WA.ui.actionBar.addButton('register-btn', 'Register', (event) => {
+        console.log('Button registered triggered', event);
+        openTutorial();
+        WA.ui.actionBar.removeButton('register-btn');
+    });
 }
 
 export {}
