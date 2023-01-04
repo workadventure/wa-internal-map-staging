@@ -32,6 +32,7 @@ const addFeebackButton = () => {
     if(WA.player.state.hasFeedback) return;
     WA.ui.actionBar.addButton({
         id: 'feedback-btn',
+        // @ts-ignore
         type: 'action',
         imageSrc: 'http://develop.test.workadventu.re/images/feedback/star.svg',
         toolTip: 'Let your feedback',
