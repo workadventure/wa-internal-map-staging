@@ -34,7 +34,6 @@ const addFeebackButton = () => {
         id: 'feedback-btn',
         // @ts-ignore
         type: 'action',
-        //imageSrc: 'http://develop.test.workadventu.re/images/feedback/star.svg',
         imageSrc: 'https://backup-workadventure-db-prod.s3.eu-west-1.amazonaws.com/logo/workadventure-rate-white.svg',
         toolTip: 'Let your feedback',
         callback: (event) => {
