@@ -1,6 +1,8 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 import "./onboarding";
 import "./survey";
+import "./pricing";
+import "./banner";
 
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
