@@ -22,7 +22,7 @@ const openPricingModal = () => {
     console.info('Opening price modal for world freemium for admin or editor user');
     WA.player.state.hasVisitPricing = true;
     WA.ui.modal.openModal({
-        src: "https://develop.test.workadventu.re/funnel/pricing",
+        src: "https://admin.workadventu.re/funnel/pricing",
         allow: "fullscreen",
         title: "Pricing",
         allowApi: true,
