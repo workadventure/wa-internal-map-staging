@@ -2,6 +2,8 @@
 
 console.info('Survey feedback Script started successfully');
 
+let feedbackModalIsOpen = false;
+
 WA.onInit().then(() => {
     // Add new button to let a feedback
     if(WA.player.state.hasFeedback)return;
@@ -25,8 +27,14 @@ const openSurveyFeedback = (TIME_TO_OPEN_FUNNEL = 2000) => {
             allowApi: true,
             position: "center",
         });
+        feedbackModalIsOpen = true;
     }, TIME_TO_OPEN_FUNNEL);
 }
+
+const closeSurveyFeedback = () => {
+    WA.ui.modal.closeModal();
+    feedbackModalIsOpen = false;
+};
 
 const addFeebackButton = () => {
     if(WA.player.state.hasFeedback) return;
@@ -36,8 +44,10 @@ const addFeebackButton = () => {
         type: 'action',
         imageSrc: 'https://backup-workadventure-db-prod.s3.eu-west-1.amazonaws.com/logo/workadventure-rate-white.svg',
         toolTip: 'Let your feedback',
-        callback: (event) => {
-            console.log('Button feedback triggered', event);
+        callback: () => {
+            if(feedbackModalIsOpen){
+                return closeSurveyFeedback();
+            }
             openSurveyFeedback(0);
         }
     });
