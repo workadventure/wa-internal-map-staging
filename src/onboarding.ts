@@ -55,8 +55,8 @@ export const openFunnel = (TIME_TO_OPEN_FUNNEL = 20000) => {
         WA.ui.modal.closeModal();
 
         let src = `https://staging.workadventu.re/funnel/connection?roomUrl=${encodeURI(WA.room.id)}`;
-        if(WA.room.id.indexOf('workadventure.localhost') !== -1){
-            src = src.replace('https://staging.workadventu.re', 'http://workadventure.localhost');
+        if(WA.room.id.indexOf('workadventure.localhost') !== -1 || WA.room.id.indexOf('workadventure.localhost') !== -1){
+            src = src.replace('https://staging.workadventu.re', 'http://localhost');
         }
         WA.ui.modal.openModal({
             src,

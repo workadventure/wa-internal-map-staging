@@ -3,6 +3,7 @@ import "./onboarding";
 import "./survey";
 import "./pricing";
 import "./banner";
+import "./claim-office";
 
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 

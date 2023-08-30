@@ -9675,29 +9675,28 @@
          "name":"floorLayer",
          "objects":[
                 {
-                 "class":"",
                  "height":128,
                  "id":13,
                  "name":"followUs2Popup",
                  "rotation":0,
+                 "type":"",
                  "visible":true,
                  "width":256,
                  "x":1248,
                  "y":1472
                 }, 
                 {
-                 "class":"",
                  "height":128,
                  "id":14,
                  "name":"needHelpPopup",
                  "rotation":0,
+                 "type":"",
                  "visible":true,
                  "width":256,
                  "x":1312,
                  "y":1472
                 }, 
                 {
-                 "class":"website",
                  "height":114.212004828267,
                  "id":15,
                  "name":"cinemaScreen",
@@ -9713,90 +9712,90 @@
                          "value":"https:\/\/i.ibb.co\/xGCqXLm\/countdown-wa-cinema.gif"
                         }],
                  "rotation":0,
+                 "type":"website",
                  "visible":true,
                  "width":216.400453564505,
                  "x":1670.00413958544,
                  "y":802
                 }, 
                 {
-                 "class":"",
                  "height":96,
                  "id":23,
                  "name":"doorCodePopup",
                  "rotation":0,
+                 "type":"",
                  "visible":true,
                  "width":192,
                  "x":2496,
                  "y":1504
                 }, 
                 {
-                 "class":"",
                  "height":96,
                  "id":24,
                  "name":"toRoom3Popup",
                  "rotation":0,
+                 "type":"",
                  "visible":true,
                  "width":192,
                  "x":2336,
                  "y":1504
                 }, 
                 {
-                 "class":"",
                  "height":128,
                  "id":25,
                  "name":"meetDeskPopup",
                  "rotation":0,
+                 "type":"",
                  "visible":true,
                  "width":224,
                  "x":1824,
                  "y":1504
                 }, 
                 {
-                 "class":"",
                  "height":128,
                  "id":26,
                  "name":"playDeskPopup",
                  "rotation":0,
+                 "type":"",
                  "visible":true,
                  "width":224,
                  "x":2400,
                  "y":1408
                 }, 
                 {
-                 "class":"",
                  "height":128,
                  "id":27,
                  "name":"workDeskPopup",
                  "rotation":0,
+                 "type":"",
                  "visible":true,
                  "width":224,
                  "x":1632,
                  "y":2080
                 }, 
                 {
-                 "class":"",
                  "height":128,
                  "id":28,
                  "name":"collaborateDeskPopup",
                  "rotation":0,
+                 "type":"",
                  "visible":true,
                  "width":224,
                  "x":2432,
                  "y":2080
                 }, 
                 {
-                 "class":"",
                  "height":128,
                  "id":29,
                  "name":"createDeskPopup",
                  "rotation":0,
+                 "type":"",
                  "visible":true,
                  "width":224,
                  "x":3232,
                  "y":1408
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":30,
                  "name":"dontShowMeetPopup",
@@ -9808,13 +9807,13 @@
                          "value":false
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":1888,
                  "y":1664
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":31,
                  "name":"dontShowWorkPopup",
@@ -9826,13 +9825,13 @@
                          "value":false
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":1696,
                  "y":2240
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":33,
                  "name":"dontShowCollaboratePopup",
@@ -9844,13 +9843,13 @@
                          "value":false
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":2496,
                  "y":2240
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":34,
                  "name":"dontShowPlayPopup",
@@ -9862,13 +9861,13 @@
                          "value":false
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":2464,
                  "y":1568
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":35,
                  "name":"dontShowCreatePopup",
@@ -9880,13 +9879,13 @@
                          "value":false
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":3296,
                  "y":1568
                 }, 
                 {
-                 "class":"area",
                  "height":224,
                  "id":36,
                  "name":"githubRepository",
@@ -9902,13 +9901,13 @@
                          "value":"https:\/\/valdotr.github.io\/wa-internal-map\/repository.html"
                         }],
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":405,
                  "x":3275,
                  "y":1088
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":37,
                  "name":"restRoomDoor",
@@ -9940,35 +9939,35 @@
                          "value":false
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":3424,
                  "y":2208
                 }, 
                 {
-                 "class":"",
                  "height":128,
                  "id":38,
                  "name":"exitMetaPopup",
                  "rotation":0,
+                 "type":"",
                  "visible":true,
                  "width":256,
                  "x":32,
                  "y":1024
                 }, 
                 {
-                 "class":"",
                  "height":128,
                  "id":40,
                  "name":"followUs3Popup",
                  "rotation":0,
+                 "type":"",
                  "visible":true,
                  "width":256,
                  "x":3456,
                  "y":1472
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":57,
                  "name":"cafeteriaDoor",
@@ -10000,13 +9999,13 @@
                          "value":false
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":3499.2555784561,
                  "y":1963.04061569376
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":69,
                  "name":"meetingRoomDoor",
@@ -10038,24 +10037,24 @@
                          "value":false
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":943,
                  "y":674
                 }, 
                 {
-                 "class":"",
                  "height":132.812833187942,
                  "id":71,
                  "name":"signup2Popup",
                  "rotation":0,
+                 "type":"",
                  "visible":true,
                  "width":407,
                  "x":3435.95209204559,
                  "y":1545.74420464941
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":72,
                  "name":"gardenDoor",
@@ -10082,13 +10081,13 @@
                          "value":"openGardenDoor"
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":196,
                  "y":1096
                 }, 
                 {
-                 "class":"area",
                  "height":238,
                  "id":73,
                  "name":"focusMeetingRoom2",
@@ -10104,13 +10103,13 @@
                          "value":"0.25"
                         }],
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":194,
                  "x":672,
                  "y":423
                 }, 
                 {
-                 "class":"area",
                  "height":254,
                  "id":74,
                  "name":"focusMeetingRoom1",
@@ -10126,13 +10125,13 @@
                          "value":"0.25"
                         }],
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":320,
                  "x":896,
                  "y":396
                 }, 
                 {
-                 "class":"area",
                  "height":252.971137521222,
                  "id":75,
                  "name":"chatalberteinstein",
@@ -10148,13 +10147,13 @@
                          "value":"publicchatalberteinstein"
                         }],
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":320.033955857385,
                  "x":896.434634974533,
                  "y":396.434634974533
                 }, 
                 {
-                 "class":"area",
                  "height":236.842,
                  "id":76,
                  "name":"chatwesteros",
@@ -10170,54 +10169,182 @@
                          "value":"publicchatwesteros"
                         }],
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":193.548,
                  "x":671.477273344652,
                  "y":422.326028862479
                 }, 
                 {
-                 "class":"",
                  "height":128,
                  "id":77,
                  "name":"followUs1Popup",
                  "rotation":0,
+                 "type":"",
                  "visible":true,
                  "width":256,
                  "x":289.504811167133,
                  "y":928.216427586378
                 }, 
                 {
-                 "class":"",
                  "height":190,
                  "id":80,
                  "name":"signup1Popup",
                  "rotation":0,
+                 "type":"",
                  "visible":true,
                  "width":407,
                  "x":275.779472470916,
                  "y":800.298343430011
                 }, 
                 {
-                 "class":"area",
                  "height":55.3043333333334,
                  "id":81,
                  "name":"exitToMetadventure",
                  "rotation":0,
+                 "type":"area",
                  "visible":true,
                  "width":75.0340000000001,
                  "x":1248,
                  "y":448
                 }, 
                 {
-                 "class":"",
                  "height":128,
                  "id":82,
                  "name":"exitToMetadventurePopup",
                  "rotation":0,
+                 "type":"",
                  "visible":true,
                  "width":192,
                  "x":1248,
                  "y":288
+                }, 
+                {
+                 "height":67.0868062614353,
+                 "id":83,
+                 "name":"office_6",
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":91.4820085383207,
+                 "x":707.460866029681,
+                 "y":957.511689367757
+                }, 
+                {
+                 "height":67.0868,
+                 "id":85,
+                 "name":"office_5",
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":91.482,
+                 "x":704.411470014231,
+                 "y":831.4698140679
+                }, 
+                {
+                 "height":67.0868,
+                 "id":86,
+                 "name":"office_4",
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":91.482,
+                 "x":611.912994714373,
+                 "y":958.528159260012
+                }, 
+                {
+                 "height":67.0868,
+                 "id":87,
+                 "name":"office_3",
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":91.482,
+                 "x":609.880061191299,
+                 "y":832.486280829437
+                }, 
+                {
+                 "height":67.0868,
+                 "id":88,
+                 "name":"office_2",
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":91.482,
+                 "x":418.784310022362,
+                 "y":956.495225736938
+                }, 
+                {
+                 "height":67.0868,
+                 "id":89,
+                 "name":"office_1",
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":91.482,
+                 "x":418.784310022362,
+                 "y":830.453347306363
+                }, 
+                {
+                 "height":0,
+                 "id":90,
+                 "name":"offices",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"default",
+                         "type":"string",
+                         "value":"{\"office_1\": null,\"office_2\": null,\"office_3\": null,\"office_4\": null,\"office_5\": null,\"office_6\": null}"
+                        }, 
+                        {
+                         "name":"jsonSchema",
+                         "type":"string",
+                         "value":"{}"
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"redableBy",
+                         "type":"string",
+                         "value":""
+                        }, 
+                        {
+                         "name":"writableBy",
+                         "type":"string",
+                         "value":"admin"
+                        }],
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":17.3079483424311,
+                 "y":404.739715084543
+                }, 
+                {
+                 "height":0,
+                 "id":92,
+                 "name":"claimOffice",
+                 "point":true,
+                 "properties":[
+                        {
+                         "name":"default",
+                         "type":"string",
+                         "value":""
+                        }, 
+                        {
+                         "name":"persist",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":62.5748901610971,
+                 "y":390.094528025563
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -10231,7 +10358,6 @@
          "name":"configuration",
          "objects":[
                 {
-                 "class":"variable",
                  "height":0,
                  "id":64,
                  "name":"room3Door",
@@ -10268,13 +10394,13 @@
                          "value":true
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":2338.37387683542,
                  "y":1631.23675944189
                 }, 
                 {
-                 "class":"variable",
                  "height":0,
                  "id":70,
                  "name":"whiteboardURL",
@@ -10296,6 +10422,7 @@
                          "value":true
                         }],
                  "rotation":0,
+                 "type":"variable",
                  "visible":true,
                  "width":0,
                  "x":1090.66666666667,
@@ -10593,7 +10720,7 @@
          "y":0
         }],
  "nextlayerid":205,
- "nextobjectid":83,
+ "nextobjectid":93,
  "orientation":"orthogonal",
  "properties":[
         {
@@ -10632,7 +10759,7 @@
          "value":true
         }],
  "renderorder":"right-down",
- "tiledversion":"1.9.2",
+ "tiledversion":"1.10.0",
  "tileheight":32,
  "tilesets":[
         {
@@ -13399,6 +13526,6 @@
         }],
  "tilewidth":32,
  "type":"map",
- "version":"1.9",
+ "version":"1.10",
  "width":121
 }

@@ -2,7 +2,11 @@
 
 console.info('Survey feedback Script started successfully');
 
-let feedbackModalIsOpen = false;
+interface RoomMetaData{
+    room?: {
+        isPremium?: Boolean
+    }
+}
 
 WA.onInit().then(() => {
     // Add new button to let a feedback
@@ -27,27 +31,20 @@ const openSurveyFeedback = (TIME_TO_OPEN_FUNNEL = 2000) => {
             allowApi: true,
             position: "center",
         });
-        feedbackModalIsOpen = true;
     }, TIME_TO_OPEN_FUNNEL);
 }
 
-const closeSurveyFeedback = () => {
-    WA.ui.modal.closeModal();
-    feedbackModalIsOpen = false;
-};
-
 const addFeebackButton = () => {
-    if(WA.player.state.hasFeedback) return;
+    const metadata = WA.metadata as RoomMetaData;
+    if(WA.player.state.hasFeedback || (metadata.room?.isPremium && metadata.room.isPremium === true)) return;
     WA.ui.actionBar.addButton({
         id: 'feedback-btn',
         // @ts-ignore
         type: 'action',
         imageSrc: 'https://backup-workadventure-db-prod.s3.eu-west-1.amazonaws.com/logo/workadventure-rate-white.svg',
         toolTip: 'Let your feedback',
-        callback: () => {
-            if(feedbackModalIsOpen){
-                return closeSurveyFeedback();
-            }
+        callback: (event) => {
+            console.log('Button feedback triggered', event);
             openSurveyFeedback(0);
         }
     });

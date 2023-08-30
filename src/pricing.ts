@@ -11,7 +11,7 @@ interface RoomMetaData{
 
 WA.onInit().then(() => {
     const metadata = WA.metadata as RoomMetaData;
-
+    addBannerPricing(metadata);
     addPricingButton(metadata);
 
     if(metadata.room?.isPremium || WA.player.state.hasVisitPricing || (!WA.player.tags.includes('admin') && !WA.player.tags.includes('editor'))) return;
@@ -31,13 +31,30 @@ const openPricingModal = () => {
 }
 
 const addPricingButton = (metadata: RoomMetaData) => {
-    if(metadata.room?.isPremium) return;
+    if(metadata.room?.isPremium || (!WA.player.tags.includes('admin') && !WA.player.tags.includes('editor'))) return;
     WA.ui.actionBar.addButton({
         id: 'pricing-btn',
         label: 'Pricing',
         callback: () => {
             console.info('Button pricing triggered');
             openPricingModal();
+        }
+    });
+}
+
+const addBannerPricing = (metadata: RoomMetaData) => {
+    if(metadata.room?.isPremium || (!WA.player.tags.includes('admin') && !WA.player.tags.includes('editor'))) return;
+    //@ts-ignore
+    WA.ui.banner.openBanner({
+        id: 'freemium-banner',
+        text: 'Upgrade to premium and get access to a whole new world of fun! 🚀',
+        bgColor: '#272736',
+        textColor: '#ffffff',
+        closable: false,
+        timeToClose: 0,
+        link: {
+            url: "https://workadventu.re/pricing",
+            label: "Go Premium Today!"
         }
     });
 }

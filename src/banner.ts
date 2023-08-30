@@ -1,7 +1,7 @@
 /// <reference types="@workadventure/iframe-api-typings/iframe_api" />
 
 //@ts-ignore
-console.info('Pricing Script started successfully');
+console.info('Banner Script started successfully');
 
 interface RoomMetaData{
     room?: {
