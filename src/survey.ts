@@ -17,6 +17,7 @@ WA.onInit().then(() => {
     WA.player.state.onVariableChange('hasFeedback').subscribe((value) => {
         if(value === true){
             WA.ui.actionBar.removeButton('feedback-btn');
+            feedbackModalIsOpen = false;
         }
     });
 });
@@ -25,7 +26,7 @@ const openSurveyFeedback = (TIME_TO_OPEN_FUNNEL = 2000) => {
     setTimeout(() => {
         WA.ui.modal.closeModal();
         WA.ui.modal.openModal({
-            src: "https://blocksurvey.io/survey/14XmdFgaavcm44dHJ6Bx8hAFwJYKs7LmFG/f455240f-e7a4-4523-a2aa-87665bf29969",
+            src: "https://docs.google.com/forms/d/e/1FAIpQLSd86mmBxrzbIfSoTBeGGTVEr3fNTGJkPExtaUzmNJFRnK9lRA/viewform?usp=sf_link",
             allow: "fullscreen",
             title: "Subscription",
             allowApi: true,
