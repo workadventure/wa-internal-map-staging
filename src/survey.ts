@@ -17,7 +17,7 @@ WA.onInit().then(() => {
     WA.player.state.onVariableChange('hasFeedback').subscribe((value) => {
         if(value === true){
             WA.ui.actionBar.removeButton('feedback-btn');
-            feedbackModalIsOpen = false;
+            //feedbackModalIsOpen = false;
         }
     });
 });
