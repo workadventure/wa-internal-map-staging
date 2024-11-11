@@ -10167,6 +10167,11 @@
                          "name":"chatName",
                          "type":"string",
                          "value":"publicchatwesteros"
+                        }, 
+                        {
+                         "name":"jitsiUrl",
+                         "type":"string",
+                         "value":"meet.jit.si "
                         }],
                  "rotation":0,
                  "type":"area",
@@ -10759,7 +10764,7 @@
          "value":true
         }],
  "renderorder":"right-down",
- "tiledversion":"1.10.0",
+ "tiledversion":"1.10.2",
  "tileheight":32,
  "tilesets":[
         {
